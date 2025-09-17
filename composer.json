@@ -71,7 +71,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/dsbe-ak/SymfonyTranslationPlugin",
+            "url": "https://github.com/dsbe-ak/SymfonyTranslationBundle",
             "only": [
                 "locastic/*"
             ]
