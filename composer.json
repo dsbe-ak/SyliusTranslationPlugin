@@ -68,6 +68,15 @@
             "tests/Application/Kernel.php"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dsbe-ak/SymfonyTranslationPlugin",
+            "only": [
+                "locastic/*"
+            ]
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "php bin/create_node_symlink.php"
