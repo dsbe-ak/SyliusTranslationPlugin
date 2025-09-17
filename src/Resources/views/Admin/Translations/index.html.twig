@@ -113,5 +113,5 @@
 {% block javascripts %}
     {{ parent() }}
 
-    {{ sylius_template_event([event_prefix ~ '.javascripts'], _context) }}
+    <script src="{{ asset('bundles/locasticsyliustranslationplugin/admin/locastic-translation-plugin.js') }}"></script>
 {% endblock %}
