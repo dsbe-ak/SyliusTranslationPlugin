@@ -18,18 +18,14 @@ final class ThemesProvider implements ThemesProviderInterface
 
     private LocasticThemeFactoryInterface $locasticThemeFactory;
 
-    private string $baseDirectory;
-
     public function __construct(
         ThemeRepositoryInterface $themeRepository,
         SyliusThemeFactoryInterface $themeFactory,
         LocasticThemeFactoryInterface $locasticThemeFactory,
-        string $baseDirectory
     ) {
         $this->themeRepository = $themeRepository;
         $this->syliusThemeFactory = $themeFactory;
         $this->locasticThemeFactory = $locasticThemeFactory;
-        $this->baseDirectory = $baseDirectory;
     }
 
     public function getAll(): array
